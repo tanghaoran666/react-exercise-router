@@ -1,0 +1,12 @@
+.left{
+    float: left;
+}
+
+.tips{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 100px;
+    border: 1px black solid;
+    padding: 50px;
+    background-color: gainsboro;
+}
