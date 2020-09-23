@@ -10,6 +10,9 @@ class Header extends React.Component{
             <NavLink classname='menu-link' to="/" activeStyle={{textDecoration: "underline"}}>Home</NavLink>
             </div>
             <div className='link'>
+            <NavLink classname='menu-link' to="/products" activeStyle={{textDecoration: "underline"}}>Products</NavLink>
+            </div>
+            <div className='link'>
             <NavLink classname='menu-link' to="/my-profile" activeStyle={{textDecoration: "underline"}}>My profile</NavLink>
             </div>
             <div className='link'>
