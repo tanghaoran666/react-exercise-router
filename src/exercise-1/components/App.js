@@ -8,19 +8,12 @@ import AboutUs from './AboutUs';
 import Header from './Header';
 import Products from './Products';
 import Product from './Product';
-
+import Data from './../../exercise-2/mockups/data.json'
 class App extends Component {
   
   
   render() {
-    const products = [{id:1,
-      name:'Bicycle',
-      price:30,
-      quanity:15,
-      desc:'Bicycle is good'
-
-    }
-  ]
+    const products = Data;
 
   // function product(detail) = detail => {
   //   return Product(detail);  
@@ -37,8 +30,17 @@ class App extends Component {
             <Route exact path='/my-profile' component={MyProfile} />
             <Route exact path='/about-us' component={AboutUs} />
             <Route exact path='/products' component={Products} />
+            <Route  path='/products/1' >
+              <Product {...products.bicycle} />
+            </Route>
+            <Route  path='/products/2' >
+              <Product {...products.TV} />
+            </Route>
+            <Route  path='/products/3' >
+              <Product {...products.pencil} />
+            </Route>
             <Route path="*" component={Home} />
-            // {/* <Route  path='/products/1' component={this.product(products[0])} /> */}
+            
           </Switch>
           </div>
         </Router>
